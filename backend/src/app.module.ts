@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { RestaurantsModule } from './restaurants/restaurants.module';
+import { UploadModule } from './upload/upload.module';
 import { User } from './users/user.entity';
 import { Restaurant } from './restaurants/restaurant.entity';
 
@@ -30,6 +31,7 @@ import { Restaurant } from './restaurants/restaurant.entity';
     UsersModule,
     AuthModule,
     RestaurantsModule,
+    UploadModule,
   ],
   controllers: [AppController],
   providers: [AppService],
