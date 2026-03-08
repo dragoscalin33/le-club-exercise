@@ -1,20 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
+import { AuthProvider } from './src/contexts/AuthContext'
+import AppNavigator from './src/navigation/AppNavigator'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Le Club</Text>
+    <AuthProvider>
       <StatusBar style="auto" />
-    </View>
+      <AppNavigator />
+    </AuthProvider>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
